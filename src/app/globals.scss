@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#rich-text-article {
+  /* Typography */
+  $primary: #007bff;
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover {
+      color: darken($color: $primary, $amount: 25);
+    }
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+
+    li {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /* Blockquotes */
+  blockquote {
+    border-left: 4px solid $primary;
+    padding-left: 1rem;
+    margin: 1rem 0;
+
+    p {
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+  }
+
+  /* Code */
+  pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 1rem;
+    }
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
